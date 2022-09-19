@@ -1,8 +1,10 @@
 # HomeTask: Accident Explorer
 
-Dette prosjektet er basert på  [Create React App](https://github.com/facebook/create-react-app).
+Dette prosjektet er basert på  [Create React App](https://github.com/facebook/create-react-app). Kjenner du ikke til CRA, så les *[README CREATE REACT APP.md](./README%20CREATE%20REACT%20APP.md)* for hvordan starte web applikasjonen osv.
 
 Det anbefales å benytte [Visual Studio Code](https://code.visualstudio.com/)(gratis), evt annen IDE du kjenner.
+
+*Du bør ikke bruke mer enn 4 timer, så du rekker kasnkje ikke alt eller alt du hadde tenkt du skulle gjøre. Men du kan gjerne ha tenkt igjennom de resterende oppgavene, slik at du kan forklare hvordan du ville ha løst dem.*
 
 ## Bakgrunn
 
@@ -14,6 +16,11 @@ Oppgaven består i å lage datavisningsdelen.
 Data i er hentet fra Nasjonal Vegdatabase (NVDB). Punktene viser ulykker registert hos (NVDB) i perioden 2019-2020. Disse er ulykkene er vist som rød punkter i kartet. Når kartet oppdateres(panorere, zooom osv), hentes det ut data for alle punkter i kartet og disse sendes til datavisningskomponenten.
 
 ## Kom i gang
+Last ned/clone repository til deg lokalt:
+
+`git clone https://..... (url kommer)`
+
+
 Start løsningen og gjør deg kjent med koden.
 Det forventes ikke at du skal forstå bruk av ArcGIS JS API.
 
@@ -53,3 +60,9 @@ __MapContainer.js__ komponenten kan ta imot et objekt __location__. Når bruker 
 ## Oppgave 6 - Test av filtreringslogikk
 Det eksisterer allerede en enkel test __HomeTask.test.js__. Lag en en ny testfil med en test av fitreringslogikken du lagde i oppgave 3.
 Applikasjonen er basert på Create-react-app, så "jest" er allerede lastet inn.
+
+<br>
+<br>
+
+>#### NB: 
+>Last opp din kode i GitHub eller lignende i et *private repo*. Husk å dele ditt repository med oss senest kl 09 dagen før intervjuet med oss.
