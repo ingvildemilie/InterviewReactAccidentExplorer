@@ -4,7 +4,7 @@ Dette prosjektet er basert på  [Create React App](https://github.com/facebook/c
 
 Det anbefales å benytte [Visual Studio Code](https://code.visualstudio.com/)(gratis), evt annen IDE du kjenner.
 
-*Du bør ikke bruke mer enn 4 timer, så du rekker kasnkje ikke alt eller alt du hadde tenkt du skulle gjøre. Men du kan gjerne ha tenkt igjennom de resterende oppgavene, slik at du kan forklare hvordan du ville ha løst dem.*
+*Du bør ikke bruke mer enn 4 timer, så du rekker kanskje ikke alt eller alt du hadde tenkt du skulle gjøre. Men du kan gjerne ha tenkt igjennom de resterende oppgavene, slik at du kan forklare hvordan du ville ha løst dem.*
 
 ## Bakgrunn
 
@@ -13,7 +13,7 @@ Applikasjon består av 2 deler, en kartdel og datavisningsdel.
 Kartet er basert på Esri ArcGIS Javascript API.
 Oppgaven består i å lage datavisningsdelen.
 
-Data i er hentet fra Nasjonal Vegdatabase (NVDB). Punktene viser ulykker registert hos (NVDB) i perioden 2019-2020. Disse er ulykkene er vist som rød punkter i kartet. Når kartet oppdateres(panorere, zooom osv), hentes det ut data for alle punkter i kartet og disse sendes til datavisningskomponenten.
+Data i er hentet fra Nasjonal Vegdatabase (NVDB) og består av ulykker registert hos (NVDB) i perioden 2019-2020. Disse er ulykkene er vist som rød punkter i kartet. Når kartet oppdateres(panorere, zooom osv), hentes det ut data for alle punkter vist i kartet og disse sendes til datavisningskomponenten.
 
 ## Kom i gang
 Last ned/clone repository til deg lokalt:
@@ -22,7 +22,7 @@ Last ned/clone repository til deg lokalt:
 
 
 Start løsningen og gjør deg kjent med koden.
-Det forventes ikke at du skal forstå bruk av ArcGIS JS API.
+Det forventes ikke at du skal forstå bruk av ArcGIS JS API. Men er du nysgjerrig er hele API'et dokumentert [her](https://developers.arcgis.com/javascript/latest/)
 
 Ikke bruk ferdige komponenter, bibliotek eller design rammeverk for å løse oppgaven.
 
@@ -43,7 +43,7 @@ Hver ulykke bør vise f.eks ulykkeskatergori og dato for ulykken.
 Ved å klikke på en ulykke skal man kunne se resterende data for ulykken. Lag en collapse/expand ("vis"/"skjul" data for ulykke) funksjonalitet når bruker klikke på tittelen du opprettet.
 
 ## Oppgave 3 - Filtrering
-Det kan bli mye data dersom du zoom deg ut i kartet, så bruker ænsker å kunne filtrere lista basert på feltet "alvorligste_skadegrad". F.eks bare kunne se ulykker med "Letter skadd" i lista.
+Det kan bli mye data dersom du zoom deg ut i kartet, så bruker ønsker å kunne filtrere lista basert på feltet "alvorligste_skadegrad". F.eks bare kunne se ulykker med "Letter skadd" i lista.
 Det bør også være et eget alternativ for å se alle data, altså ufiltrert (default). 
 
 ## Oppgave 4 - Første ulykke alltid expanded
