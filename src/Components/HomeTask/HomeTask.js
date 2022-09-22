@@ -1,8 +1,8 @@
 import './HomeTask.css';
 
-function HomeTask({accidents}) {
+function HomeTask({accidents, setLocation}) {
   // check data structure
-  console.log(accidents)
+  console.log('Hometask:accidents', accidents)
 
   return (
     <div className="homeTask">
@@ -12,6 +12,7 @@ function HomeTask({accidents}) {
 
       <div>Ulykker: {accidents?.length}</div>
       <div>console.log(accidents);</div>
+
     </div>
   );
 }

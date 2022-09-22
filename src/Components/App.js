@@ -5,11 +5,12 @@ import Map from './Map/MapContainer';
 
 function App() {
   const [accidents, setAccidents] = useState([]);
+  const [location, setLocation] = useState(null);
 
   return (
     <React.Fragment>
-      <Map setAccidents={setAccidents}/>
-      <HomeTask accidents={accidents} />
+      <Map setAccidents={setAccidents} location={location}/>
+      <HomeTask accidents={accidents} setLocation={setLocation}/>
     </React.Fragment>
   );
 }

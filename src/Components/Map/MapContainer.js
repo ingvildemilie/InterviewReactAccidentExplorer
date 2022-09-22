@@ -57,14 +57,19 @@ function MapContainer({setAccidents, location}) {
         layerView.watch("updating", value => {
           layerView.queryFeatures({
             outFields: layerView.availableFields,
-            geometry: view.current.extent
+            geometry: view.current.extent,
+            returnGeometry: true
           })
           .then(results => {
-            console.log(results)
+            //console.log('layerview',results)
             // return attributes only
             // loop all features and set domain values on attributes
             const accidentData = results.features.map(feature => {
-              return _getAttributesWithDomainValue(feature.attributes);
+              let attr = feature.attributes;
+              // add x & y to attributes for simplicity
+              attr.x = Math.trunc(feature.geometry?.x ?? 0);
+              attr.y = Math.trunc(feature.geometry?.y ?? 0);
+              return _getAttributesWithDomainValue(attr);
             });
             setAccidents(accidentData);
           })
@@ -98,11 +103,11 @@ function MapContainer({setAccidents, location}) {
         center: pt,
         zoom: 15
       }, { duration: 0})
-      .then(() => {
-        const graphic = graphicGeodataOffice;
-        graphic.geometry = pt;
-        view.current.graphics.add(graphic);
-      })
+      // .then(() => {
+      //   const graphic = graphicGeodataOffice;
+      //   graphic.geometry = pt;
+      //   view.current.graphics.add(graphic);
+      // })
       .catch(function(error) {
         if (error.name !== "AbortError") {
             console.error(error);
