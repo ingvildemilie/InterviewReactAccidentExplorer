@@ -18,17 +18,14 @@ export const basemapNorway = new Basemap({
     ]
 });
 
-// NVDB Norsk Veidatabank
+// NVDB Norsk Veidatabank public AGOL mapservice
 export const layerNVDB = new FeatureLayer({
     portalItem: {
-      id: 'c985fb2357f9466784107b4905629375',
+      id:'2bb514c0c8ba433598d7d7a8a21a48f6',
     },
-    outFields: ['alvorligste_skadegrad', 'ulykkesdato','ulykkestidspunkt','uhell_kategori','antall_drepte_i_ulykken','antall_meget_alvorlig_skadet','antall_alvorlig_skadet','antall_lettere_skadet','fartsgrense'],
+    outFields: ['Ulykkeskode', 'Ulykkesdato','Antall_enheter','Fylkenavn__Ny_','Kommunenavn__Ny_','Værforhold','Føreforhold','Lysforhold','fartsgrense'],
     title: 'NVDB',
-    timeExtent: { // show only nvdb features from 2019
-        start: new Date(2019, 1, 1),
-        end: new Date(2020, 1, 1)
-      },
+    definitionExpression: "Ulykkesdato >= date '2020-01-01 00:00:00'",
     useViewTime: false,
     renderer: { // override render
         type: "simple", 

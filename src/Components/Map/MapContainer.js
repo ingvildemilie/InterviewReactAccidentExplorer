@@ -47,8 +47,13 @@ function MapContainer({setAccidents, location}) {
         // ex: result returns "alvorligste_skadegrad:6429"; code:6429 means "Alvorlig skadd"
         const _getAttributesWithDomainValue = (attributes) => {
           var attributesWithDomainValues = [];
-          for (const [key, value] of Object.entries(attributes)) {    
-            attributesWithDomainValues[key] = _fieldsHash[key]?.getName(value) ?? attributes[key]
+          for (const [key, value] of Object.entries(attributes)) { 
+            attributesWithDomainValues[key] = _fieldsHash[key]?.getName(value) ?? value;
+            if(key.indexOf("__Ny_")>-1){
+              const newKey = key.replace("__Ny_", "");
+              attributesWithDomainValues[newKey] = value;
+              delete attributesWithDomainValues[key];
+            }
           }
           return attributesWithDomainValues;
         };

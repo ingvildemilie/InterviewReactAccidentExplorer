@@ -15,7 +15,7 @@ Applikasjon består av 2 deler, en kartdel og datavisningsdel.
 Kartet er basert på Esri ArcGIS Javascript API.
 Oppgaven består i å lage datavisningsdelen.
 
-Data i er hentet fra Nasjonal Vegdatabase (NVDB) og består av ulykker registert hos NVDB i perioden 2019-2020. Disse er ulykkene er vist som rød punkter i kartet. Når kartet oppdateres(panorere, zooom osv), hentes det ut data for alle punkter vist i kartet og disse sendes til datavisningskomponenten.
+Data i er hentet fra Nasjonal Vegdatabase (NVDB) og består av ulykker registert hos NVDB i perioden etter 01.01.2020. Disse er ulykkene er vist som røde punkter i kartet. Når kartet oppdateres(panorere, zoom osv), hentes det ut data for alle punkter vist i kartet, og disse sendes til datavisningskomponenten.
 
 ## Kom i gang
 Last ned/clone repository til deg lokalt, og start løsningen.
@@ -44,21 +44,21 @@ Du styrer selv hvordan du vil lage datavisningsdelen. __Fokuser på funksjonalit
 ## Oppgave 1 - Listevisning
 Lag en liste med visning av ulykkesdata.
 
-Data skal være alltid være sortert på dato for ulykken, siste ulykke først. Sorter på feltet __'ulykkesdato'__.
+Data skal være alltid være sortert på dato for ulykken, siste ulykke først. Sorter på feltet __'Ulykkesdato'__.
 
-Hver ulykke bør vise f.eks ulykkeskatergori og dato for ulykken.
+Hver ulykke bør vise f.eks kommunenavn og dato for ulykken.
 
 ## Oppgave 2 - Expand/Collapse
-Ved å klikke på en ulykke skal man kunne se resterende data for ulykken. Lag en collapse/expand ("vis"/"skjul" data for ulykke) funksjonalitet når bruker klikke på tittelen du opprettet.
+Ved å klikke på en ulykke skal man kunne se resterende data for ulykken. Lag en collapse/expand ("vis"/"skjul" data for ulykke) funksjonalitet når bruker klikker på tittelen du opprettet.
 
 ## Oppgave 3 - Filtrering
-Det kan bli mye data dersom man zoomer deg ut i kartet, så bruker ønsker å kunne filtrere lista basert på feltet "alvorligste_skadegrad". F.eks bare kunne se ulykker med "Letter skadd" i lista.
+Det kan bli mye data dersom man zoomer deg ut i kartet, så bruker ønsker å kunne filtrere lista basert på feltet "Fartsgrense". F.eks bare kunne se ulykker med fartsgrense "100" (km/t) i lista.
 Det bør også være et eget alternativ for å se alle data, altså ufiltrert (default). 
 
 ## Oppgave 4 - Første ulykke alltid expanded
 Når nye data hentes, altså kartområdet endres, skal første ulykke alltid være expanded(oppslått). Alle andre ulykker er collapsed.
 
-Bruker vil også at den kun er en ulykke som kan være expanded om gangen, så klikker bruker på en ulykke for å se alle ulykkesdata må evt andre lukkes.
+Bruker vil også at den kun er en ulykke som kan være expanded om gangen, så klikker bruker på en ulykke for å se alle ulykkesdata, må evt andre åpnede ulykker lukkes.
 
 ## Oppgave 5 - Knapp: "Zoom til lokasjon"
 Lag en knapp som skal kunne zoome til valgt ulykke i kartet.
