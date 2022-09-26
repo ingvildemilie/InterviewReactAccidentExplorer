@@ -85,8 +85,8 @@ Applikasjonen er basert på Create-react-app, så "jest" er allerede lastet inn.
 
 >__NB__: 
 >- Last opp din kode i GitHub eller lignende i et *private repo*. 
->  <br />Husk å dele ditt repository med oss *senest kl 09* dagen før intervjuet med oss. Send oss også en epost.
+>  <br />Husk å dele ditt repository med oss *senest kl 09* siste arbeidsdag før intervjuet med oss (såfremt ikke annet tidspunkt er avtalt). Send oss også en epost.
 >
->- Ta med din egen pc på intervjuet med oss, slik at du presentere det du har gjort 
+>- Ta med din egen pc på intervjuet med oss, slik at du kan presentere det du har gjort 
 >
->- Likte du oppgaven? Var noe uklart? Vi tar gjerne imot innspill for å gjøre den bedre! :-)<br/><br/>
+>- Likte du oppgaven? Var noe uklart? Vi tar gjerne imot innspill for å gjøre den bedre!<br/><br/>
