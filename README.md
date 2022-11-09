@@ -17,20 +17,35 @@ Oppgaven består i å lage datavisningsdelen.
 
 Data i er hentet fra Nasjonal Vegdatabase (NVDB) og består av ulykker registert hos NVDB i perioden etter 01.01.2020. Disse er ulykkene er vist som røde punkter i kartet. Når kartet oppdateres(panorere, zoom osv), hentes det ut data for alle punkter vist i kartet, og disse sendes til datavisningskomponenten.
 
+## Last ned repository (kode) lokalt
+En kort følger beskrivelse om du trenger hjelp til å opprette ditt eget repo du kan dele med oss og å laste ned koden lokalt til din maskin.
+
+1. Fork dette repository. Trykk på _'Fork'_ knappen og _'Create fork'_.   
+   Da lager du en kopi i din egen githubkonto.
+2. Gå til ditt eget nye repository i github
+3. Clone ditt eget repository, slik at du har en kopi lokalt på din maskin.   
+   Kopier stien til **ditt repository** ved å klikke på knappen _Code_.
+4. ```
+   // I cmd window(windows), vs code Terminal vindu el.l.:
+   >git clone https://github.com/<din bruker>/InterviewReactAccidentExplorer.git
+
+   >cd InterviewReactAccidentExplorer
+   ```
+
+1. Når du senere gjør _'git push'_ av dine commits, pusher du da endringer til ditt eget repository.
+
+
 ## Kom i gang
-Last ned/clone repository til deg lokalt, og start løsningen.
+Start løsningen og gjør deg kjent med koden.
 
-I cmd window(windows), vs code Terminal vindu el.l.:
 ```
->git clone https://github.com/geodata-no/InterviewReactAccidentExplorer.git
-
->cd InterviewReactAccidentExplorer
-
+// I cmd window(windows), vs code Terminal vindu el.l.:
+// før du starter løsningen må du laste ned npm pakker
 >npm install
 
 >npm start
 ```
-Start løsningen og gjør deg kjent med koden.
+
 Det forventes __ikke__ at du skal forstå bruk av ArcGIS JS API. Men er du nysgjerrig er hele API'et dokumentert [her](https://developers.arcgis.com/javascript/latest/)
 
 Ikke bruk ferdige komponenter, bibliotek eller design rammeverk for å løse oppgaven.
