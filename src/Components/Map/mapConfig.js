@@ -21,7 +21,7 @@ export const basemapNorway = new Basemap({
 // NVDB Norsk Veidatabank public AGOL mapservice
 export const layerNVDB = new FeatureLayer({
     portalItem: {
-      id:'2bb514c0c8ba433598d7d7a8a21a48f6',
+      id:'82917f79cc984f5a860c8288361cfea4',
     },
     outFields: ['Ulykkeskode', 'Ulykkesdato','Antall_enheter','Fylkenavn__Ny_','Kommunenavn__Ny_','Værforhold','Føreforhold','Lysforhold','fartsgrense'],
     title: 'NVDB',
