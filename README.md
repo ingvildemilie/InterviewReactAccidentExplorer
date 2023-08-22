@@ -1,18 +1,19 @@
 # HomeTask: Accident Explorer
 
-I Geodata AS jobber vi med mange prosjekter som er basert på [React](https://reactjs.org/). <br />
- Dette prosjektet er basert på  [Create React App](https://github.com/facebook/create-react-app). Kjenner du ikke til CRA, så les *[README CREATE REACT APP.md](./README%20CREATE%20REACT%20APP.md)* for hvordan starte web applikasjonen osv. 
+I Geodata AS jobber vi med mange prosjekter som er basert på f.eks [React](https://reactjs.org/) eller [Vue](https://vuejs.org/).<br />
+Dette prosjektet er basert på React og benytter [Vite](https://vitejs.dev/) som byggverktøy.<br />
 
-Det anbefales å benytte [Visual Studio Code](https://code.visualstudio.com/)(gratis), evt annen IDE du kjenner. Du vil også trenge å ha installert *git* og *npm* på din maskin for å løse oppgaven.
+Det anbefales å benytte [Visual Studio Code](https://code.visualstudio.com/)(gratis), evt annen IDE du kjenner. Du vil også trenge å ha installert *git*, *node* og *npm* på din maskin for å løse oppgaven.
 
 *Du bør ikke bruke mer enn 4 timer, så du rekker kanskje ikke alt eller alt du hadde tenkt du skulle gjøre. Står du fast, så kan du ta neste oppgave. Men du kan gjerne ha tenkt igjennom de gjenværende oppgavene, slik at du kan forklare hvordan du ville ha løst dem.
 Fokuser på struktur og kodekvalitet, fremfor å ha løst mest mulig oppgaver.*
-<br /><br />
+<br />
+<br />
 ## Bakgrunn
 
 Du skal bygge videre på en allerede kjørende react web applikasjon.
 Applikasjon består av 2 deler, en kartdel og datavisningsdel. 
-Kartet er basert på Esri ArcGIS Javascript API.
+Kartet er basert på Esri ArcGIS Maps SDK for Javascript.
 Oppgaven består i å lage datavisningsdelen.
 
 Data i er hentet fra Nasjonal Vegdatabase (NVDB) og består av ulykker registert hos NVDB i perioden etter 01.01.2020. Disse er ulykkene er vist som røde punkter i kartet. Når kartet oppdateres(panorere, zoom osv), hentes det ut data for alle punkter vist i kartet, og disse sendes til datavisningskomponenten.
@@ -43,12 +44,22 @@ Start løsningen og gjør deg kjent med koden.
 // før du starter løsningen må du laste ned npm pakker
 >npm install
 
+// start løsningen lokalt
 >npm start
+
+// bygg løsningen (for deploy, ikke nødvendig for å løse oppgaven)
+npm run build
+
+// kjør produksjonsverjon(bygd) løsningen lokalt
+npm run serve
+
+// kjør tester
+npm run test
 ```
 
-Det forventes __ikke__ at du skal forstå bruk av ArcGIS JS API. Men er du nysgjerrig er hele API'et dokumentert [her](https://developers.arcgis.com/javascript/latest/)
+Det forventes __ikke__ at du skal forstå bruk av ArcGIS Maps SDK for Javascript. Men er du nysgjerrig er hele API'et dokumentert [her](https://developers.arcgis.com/javascript/latest/)
 
-Ikke bruk ferdige komponenter, bibliotek eller design rammeverk for å løse oppgaven.
+__Ikke bruk ferdige komponenter, bibliotek eller design rammeverk__ for å løse oppgaven.
 
 Du styrer selv hvordan du vil lage datavisningsdelen. __Fokuser på funksjonalitet, før design__. Men vis oss gjerne at du klarer å lage et godt UI også.
 
@@ -92,8 +103,8 @@ Har du kommet helt hit har du antagelig jobbet endel med React tidligere (har du
 <br />
 Så en siste utfordring følger:
 <br />
-Det eksisterer allerede en enkel test __HomeTask.test.js__. Lag en en ny testfil med en test av filtreringslogikken du lagde i oppgave 3.
-Applikasjonen er basert på Create-react-app, så "jest" er allerede lastet inn.
+Det eksisterer allerede en enkel test __HomeTask.test.jsx__. Lag en en ny testfil med en test av filtreringslogikken du lagde i oppgave 3.
+[Vitest](https://vitest.dev/) og [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) er allerede satt opp.
 
 <br />
 <br />

@@ -1,3 +1,4 @@
+import React from 'react';
 import './HomeTask.css';
 
 function HomeTask({accidents, setLocation}) {
