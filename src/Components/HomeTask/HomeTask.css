@@ -2,18 +2,102 @@
   float: left;
   padding: 0;
   margin: 0;
-  height: 100vh;
+  height:fit-content;
   width: 50%;
-  background-color: lightgrey;  
+  background-color: lightgrey;
 }
 
 .homeTask-header {
-  text-align: center;
   display: flex;
+  text-align: center;
+  padding-top: 1em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
 }
 
+.accidents-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+  border: 0.25em;
+  border-radius: 0.8em;
+}
+
+.filter{
+  display: flex;
+  flex-wrap: wrap;
+  width:100px;
+  padding: 1rem;
+  flex-direction: row;
+  margin: 0 auto;
+  position: relative;
+}
+
+.list-box-parent{
+  display: flex;
+  flex-wrap: wrap;
+  text-align:center;
+  flex-direction: row;
+}
+
+.list-box-child{
+  display: flex;
+  flex-wrap: wrap;
+  text-align:center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.list-box {
+  display: flex;
+  flex-wrap: wrap;
+  text-align:center;
+  flex-direction: column;
+  padding: 2em;
+  margin: 2rem;
+  border: 0.25em;
+  border-radius: 0.8em;
+  background-color: rgb(255, 255, 255);
+}
+
+.expanded-box {
+  display: flex;
+  flex-direction: column;
+  text-align:left;
+  max-width: inherit;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.expandable-button {
+  border-radius: 0.3em;
+  height: fit-content;
+  width: fit-content;
+  margin: 1rem;
+  background-color: #d6d6d6;
+}
+
+.zoom-button {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: fit-content;
+  flex-wrap: wrap;
+  border-radius: 0.3em;
+  background-color: #d6d6d6;
+}
+
+.expandable-button:hover{
+  background-color: #cdf0ff;
+}
+
+.zoom-button:hover{
+  background-color: #aa0000;
+  color: #ffffff;
+}
 
